@@ -1,0 +1,85 @@
+$primary-color: #fff;
+$cursor: pointer;
+
+
+ .contactSintesis {
+   display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background: url("../../src/assets/background4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+ }
+
+.container {
+  width: 80%;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  line-height: 1.5;
+
+  img {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+  }
+
+  &-text {
+    padding: 10px 40px 10px 10px;
+
+    h2 {
+      font-size: 2rem;
+      color: #02DF71;
+    }
+
+    p {
+      font-size: 1rem;
+      color: white;
+      margin: 10px 0;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+     button {
+      width: 30%;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    input {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      border-right: 2px rgb(0, 0, 0);
+      border-top: 20px rgb(0, 0, 0);
+      border-left: 40px rgb(237, 6, 6);
+      background-color: rgb(255, 255, 255);
+      outline: none;
+      width: 60%;
+      padding: 15px;
+      border-radius: 3px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button {
+      background-image: linear-gradient(to right, #02DF71, #02DF71);
+      display: block;
+      color: rgb(80, 80, 80);
+      font-size: .8rem;
+      cursor: $cursor;
+      box-shadow: 0 5px 20px #02DF71;
+      transition: box-shadow .3s ease-in-out;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button:hover {
+      box-shadow: none;
+      color: black
+    }
+  }
+}
