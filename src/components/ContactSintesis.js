@@ -14,7 +14,7 @@ function ContactSintesis() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate('/follow-up'))
+      .then(() => navigate('/success'))
       .catch((error) => alert(error));
   }
     return (
