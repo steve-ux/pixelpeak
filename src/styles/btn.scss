@@ -1,4 +1,4 @@
-$prime: #00fe80;
+$prime: #02DF71;
 $second: #0c1016;
 
 svg {
@@ -10,11 +10,12 @@ svg {
 #gooey-button {
   padding: 1rem;
   font-size: 0.7rem;
+  transition: font-size .3s ease-in-out;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-  color: rgb(80, 80, 80);
+  color: rgb(0, 0, 0);
   filter: url("#gooey");
   position: relative;
   background-color: $prime;
@@ -23,6 +24,10 @@ svg {
 &:focus {
   outline: none;
 }
+}
+#gooey-button:hover {
+  font-size: 0.9rem;
+  transition: font-size .3s ease-in-out;
 }
 
 .bubbles {

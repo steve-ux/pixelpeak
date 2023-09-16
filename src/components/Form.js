@@ -25,9 +25,9 @@ function Formulario() {
       <h2 class="animation a1">[ Comencemos ]</h2>
       <h4 class="animation a2">Completalo y nos comunicamos a la brevedad. Los campos con * son obligatorios.</h4>
     </div>
-    <form onSubmit={handleSubmit} name="data" method="POST" netlify>
+    <form onSubmit={handleSubmit} name="DataBase" method="POST" netlify>
     <div class="form">
-    <input type="hidden" name="form-name" value="data"/>
+    <input type="hidden" name="form-name" value="DataBase"/>
     <input type="text" id="text" name="Nombre" class="form-field animation a3" placeholder="*Nombre" required/>
       <input type="email" id="email" name="Correo" class="form-field animation a3" placeholder="*Email" required/>
       <input type="number" id="number" name="Teléfono" class="form-field animation a3" placeholder="*Teléfono. Ej: +54 9 261 212 1844" required/>
@@ -43,7 +43,17 @@ function Formulario() {
     </div>
     {enviado && (
         <div className="mensajeExito">
-          Gracias por enviar su mensaje. Nos pondremos en contacto pronto.
+           <div class="containerForm">
+  <div class="left" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000">
+  <h3 className="titleEnviado">
+  <span className="resaltados">¡Tu mensaje fue enviado!</span> A la brevedad vas a ser contactado. Muchas gracias.
+  </h3>
+  </div>
+  <div class="right"></div>
+</div>
         </div>
       )}
       </>

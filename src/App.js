@@ -13,7 +13,7 @@ function App() {
         <Route path="/AboutUs" element={<Nosotros />} />
         <Route path="/Contact" element={<Contacto />} />
         <Route path="/Blog" element={<Blog />} />
-        <Route path="/success" element={<Enviado />} />
+        <Route path="/Enviado" element={<Enviado />} />
       </Routes>
     </BrowserRouter>
   

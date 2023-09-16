@@ -9,11 +9,6 @@
 .formContact.sent {
   display: none;
 }
-
-.mensajeExito {
-  color: #02DF71;
-}
-
 .containerForm {
   display: flex;
   height: 100vh;
@@ -106,7 +101,7 @@
   transition: box-shadow .3s ease-in-out;
   border-radius: 3px;
   margin-top: 10px;
-  color: rgb(80, 80, 80);
+  color: rgb(0, 0, 0);
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;

@@ -552,7 +552,7 @@ margin-top: 5px;
   /**    Hamburger  **/
 
   .hamburger {
-    position: absolute;
+    position: fixed;
     top: 5em;
     right: 5%;
     margin-left: -2em;
@@ -687,7 +687,7 @@ margin-top: 5px;
     color: #000000;
   }
   .nosotros button {
-    color: rgb(80, 80, 80);;
+    color: rgb(0, 0, 0);;
     background-color: var(--primary-color);
     padding: .5rem;
     border-radius: .5rem;
@@ -703,7 +703,7 @@ margin-top: 5px;
     background-color: var(--primary-color);
     color: rgb(0, 0, 0);
     box-shadow: none;
-    transition: .2s ease;
+    transition: box-shadow .3s ease-in-out;
   }
   .description {
     display: flex;
@@ -729,7 +729,7 @@ margin-top: 5px;
     margin-left: 5rem;
   }
   .aboutUs button {
-    color: rgb(80, 80, 80);
+    color: rgb(0, 0, 0);
     background-color: var(--primary-color);
     padding: .5rem;
     border-radius: .5rem;
@@ -747,7 +747,7 @@ margin-top: 5px;
     background-color: var(--primary-color);
     color: rgb(0, 0, 0);
     box-shadow: none;
-    transition: .2s ease;
+    transition: box-shadow .3s ease-in-out;
   } 
   .aboutUs span {
     color: var(--primary-color);
@@ -783,12 +783,12 @@ margin-top: 5px;
     text-transform: uppercase;
     font-size: 2rem;
   }
-section {
+.clients section{
   display: flex;
   width: 100%;
   height: 430px;
 }
-  section img {
+section .pictureClients {
     width: 0px;
     height: 100%;
     flex-grow: 1;
@@ -796,16 +796,15 @@ section {
     opacity: 1;
     transition: .5s ease;
     filter: brightness(70%);
-     
   }
-  section > img:hover {
-  cursor: crosshair;
+  section .pictureClients:hover {
+  cursor: pointer;
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
   }
   .clients  button {
-    color: rgb(80, 80, 80);
+    color: rgb(0, 0, 0);
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: .5rem;
@@ -823,7 +822,7 @@ section {
     background-color: var(--primary-color);
     color: rgb(0, 0, 0);
     box-shadow: none;
-    transition: .2s ease;
+    transition: box-shadow .3s ease-in-out;
   }
 h5{
   font-family: 'Montserrat', sans-serif;
@@ -1082,7 +1081,65 @@ font-family: var(--primary-font);
   }
 
   /*  ENVIADO  */
+/* Enviado */
 
+.enviado {
+  margin: 0;
+  background-image: url("../src/assets/background4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 90vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleEnviado {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  margin-bottom: -9rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  height: 50vh;
+}
+
+.btnEnviado {
+  color: rgb(0, 0, 0);;
+  background-color: var(--primary-color);
+  padding: .5rem;
+  border-radius: .5rem;
+  border: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #02DF71;
+  transition: box-shadow .3s ease-in-out;
+}
+.btnEnviado:hover {
+  background-color: var(--primary-color);
+  color: rgb(0, 0, 0);
+  box-shadow: none;
+  transition: box-shadow .3s ease-in-out;
+}
+.contenedorBtn {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (max-width: 699px) {
+  .titleEnviado {
+    font-size: 1.5rem;
+  }  
+}
   .mensajeExito {
     color: #02DF71;
   }
