@@ -11,13 +11,9 @@ function ContactSintesis() {
     <div class="container-text">
       <h2>[ Permanezcamos conectados ]</h2>
       <p>Dejanos tu correo electrónico y te contactamos a la brevedad. <br/>Además te suscribirás al newsletter de PixelPeak para enterarte siempre de las últimas novedades que tenemos para vos.<br/> Prometemos no mandarte spam.</p>
-      <form action="https://pixelpeak.ar/Contact" name="contact" method="POST" data-netlify="true">
+      <form action="#" name="contact" method="POST" data-netlify="true">
       <input type="email" id="email" name="Correo" placeholder="Email" required/>
       <button type="submit">Suscribirse</button>
-      <input type="hidden" name="_next" value="#"/>
-    <input type="hidden" name="_subject" value="Nuevo correo para el newsletter. Mandar info."/>
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_template" value="box"/>
       </form>
     </div>
   </div>
