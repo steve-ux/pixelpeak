@@ -11,7 +11,7 @@ function ContactSintesis() {
     <div class="container-text">
       <h2>[ Permanezcamos conectados ]</h2>
       <p>Dejanos tu correo electrónico y te contactamos a la brevedad. <br/>Además te suscribirás al newsletter de PixelPeak para enterarte siempre de las últimas novedades que tenemos para vos.<br/> Prometemos no mandarte spam.</p>
-      <form name="correo" method="POST" netlify>
+      <form action="/Contact" name="contact" method="POST" netlify>
       <input type="email" id="email" name="Correo" placeholder="Email" required/>
       <button type="submit">Suscribirse</button>
       <input type="hidden" name="_next" value="#"/>
