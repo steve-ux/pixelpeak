@@ -27,6 +27,7 @@ function Formulario() {
     </div>
     <form onSubmit={handleSubmit} name="data" method="POST" netlify>
     <div class="form">
+    <input type="hidden" name="form-name" value="data"/>
     <input type="text" id="text" name="Nombre" class="form-field animation a3" placeholder="*Nombre" required/>
       <input type="email" id="email" name="Correo" class="form-field animation a3" placeholder="*Email" required/>
       <input type="number" id="number" name="Teléfono" class="form-field animation a3" placeholder="*Teléfono. Ej: +54 9 261 212 1844" required/>
@@ -34,10 +35,6 @@ function Formulario() {
       <textarea type="text" id="message" name="Mensaje" class="form-field animation a3" placeholder="Idea detallada"/>
       {/* <p class="animation a5"><a href="#">Al enviar el formulario aceptas los términos y condiciones.</a></p> */}
       <button type="submit" class="animation a6">ENVIAR</button>
-      <input type="hidden" name="_next" value="#"/>
-    <input type="hidden" name="_subject" value="Nuevo correo para el newsletter. Mandar info."/>
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_template" value="table"/>
     </div>
     </form>
   </div>
