@@ -1,4 +1,4 @@
-//import React, { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/form.scss";
 
@@ -15,18 +15,15 @@ function Formulario() {
   //   }, 2000);
   // };
 
-  let navigate = useNavigate()
+  
+  const [enviado, setEnviado] = useState(false);
   const submitHandler = (e) =>{
     e.preventDefault();
-    let myForm = document.getElementById("data-form");
-    let formData = new FormData(myForm);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate('/Enviado'))
-      .catch((error) => alert(error));
+      setTimeout(() => {
+             setEnviado(true);
+             // Después de 2 segundos, oculta el formulario
+             document.querySelector(".formContact").classList.add("sent");
+           }, 2000);
   }
 
 //     return (
@@ -86,7 +83,7 @@ function Formulario() {
 
   return (
     <>
-  <div className="formContact">
+  <div className={`formContact ${enviado ? "sent" : ""}`}>
 <div class="containerForm">
 <div class="left">
   <div class="headerForm">
@@ -118,7 +115,7 @@ function Formulario() {
 <div class="right"></div>
 </div>
   </div>
-  {/* {enviado && (
+  {enviado && (
       <div className="mensajeExito">
          <div class="containerForm">
 <div class="left" data-aos="fade-left"
@@ -132,7 +129,7 @@ function Formulario() {
 <div class="right"></div>
 </div>
       </div>
-    )} */}
+    )}
     </>
   );
 }
