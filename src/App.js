@@ -4,6 +4,7 @@ import Nosotros from "./components/Nosotros";
 import Contacto from "./components/Contacto";
 import Blog from "./pages/Blog"; 
 import Enviado from "./components/success";
+import FormEnviado from "./components/Enviado";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Contact" element={<Contacto />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Enviado" element={<Enviado />} />
+        <Route path="/FormEnviado" element={<FormEnviado />} />
       </Routes>
     </BrowserRouter>
   
