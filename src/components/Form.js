@@ -29,18 +29,16 @@ function Formulario() {
 
   <form onSubmit={submitHandler} id="data-form" name="DataBase" method="POST" data-netlify="true">
   <div class="form">
+  <input type="hidden" name="form-name" value="DataBase"/>
+  <input type="text" id="nombre" name="Nombre" class="form-field animation a3" placeholder="*Nombre" required/>
 
-  <input type="hidden" name="DataBase" value="DataBase"/>
+    <input type="email" id="mail" name="Correo" class="form-field animation a3" placeholder="*Email" required/>
 
-  <input type="text" name="Nombre" class="form-field animation a3" placeholder="*Nombre" required/>
+    <input type="number" id="telefono" name="Teléfono" class="form-field animation a3" placeholder="*Teléfono. Ej: +54 9 261 212 1844" required/>
 
-    <input type="email" name="Correo" class="form-field animation a3" placeholder="*Email" required/>
+    <input type="text" id="proyect" name="Marca o proyecto" class="form-field animation a4" placeholder="Tu marca o empresa"/>
 
-    <input type="number" name="Teléfono" class="form-field animation a3" placeholder="*Teléfono. Ej: +54 9 261 212 1844" required/>
-
-    <input type="text" name="Marca o proyecto" class="form-field animation a4" placeholder="Tu marca o empresa"/>
-
-    <textarea type="text" name="Mensaje" class="form-field animation a3" placeholder="Idea detallada"/>
+    <textarea type="text" id="msj" name="Mensaje" class="form-field animation a3" placeholder="Idea detallada"/>
 
     {/* <p class="animation a5"><a href="#">Al enviar el formulario aceptas los términos y condiciones.</a></p> */}
 
