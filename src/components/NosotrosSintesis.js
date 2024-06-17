@@ -6,8 +6,8 @@ function NosotrosSintesis() {
     <div className="nosotros">
   <div className="description">
     <div>
-    <p>PixelPeak es una agencia global dedicada a la <span>programación, diseño web </span> 
-     y marketing digital. <br/>Te ofrecemos tu sitio online con <span>esencia creativa</span>.<br/>
+    <p>eKoddex es una agencia global dedicada a la <span>programación, diseño web </span> 
+     y software. <br/>Te ofrecemos tu sitio online con <span>esencia creativa</span>.<br/>
      Calidad desde la unidad más pequeña.</p>
     <button><Link to="/AboutUs">Saber más</Link></button>
     </div>

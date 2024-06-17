@@ -3,7 +3,7 @@ import Colibri from "../assets/PixelPeak_logo_original.png";
   function Navbar() {
     return (
     <div className="burgerNav">
-      <h1 class="logo"><img class="fox" src={Colibri} alt="Logo PixelPeak" width="40"/>[ PIXELPEAK ]</h1>
+      <h1 class="logo"><img class="fox" src={Colibri} alt="Logo PixelPeak" width="40"/>[ eKoddex ]</h1>
   <input id="toggle" type="checkbox"/>
 
 <label for="toggle" class="hamburger">

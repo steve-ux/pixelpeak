@@ -28,8 +28,8 @@ function Header() {
     DISEÑO.<br /> 
     PROGRAMACIÓN.<br />
     HOSTING.<br />
-    MARKETING.<br />
-    PIXELPEAK.
+    SOFTWARE.<br />
+    eKODDEX.
     </div>
 </b>
 </div>  

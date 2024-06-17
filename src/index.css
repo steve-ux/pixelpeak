@@ -512,6 +512,56 @@ margin-top: 5px;
   word-spacing: 4px;
 }
 
+/*  TOOLS  */
+.tools {
+  height: 100%;
+}
+
+/*  PAGOS  */
+.pagos {
+  background-color: rgb(254, 240, 255);  
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.pagos h3 {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  padding: 2rem;
+  font-size: 2rem;
+}
+.logos {
+  padding: 1rem;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.logos img {
+  padding: .9rem;
+  filter: grayscale(100%);
+  max-width: 100%; /* Establece el ancho máximo al 100% */
+  height: auto; /* Permite mantener la proporción de aspecto */
+}
+.logos img:hover {
+  padding: .9rem;
+  filter: grayscale(0%);
+  max-width: 100%;
+  height: auto;
+}
+.visa {
+  width: 7%;
+}
+.mastercard {
+  width: 4%;
+}
+.ethereum {
+  width: 4%;
+}
 /* btnDiv */
 
 .botonCall {

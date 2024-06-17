@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Team from "./Team";
 import TextNosotros from "./TextNosotros";
+import Tools from "./Tools";
+import Pagos from "./Pagos";
 
 function Nosotros() {
     return (
@@ -17,6 +19,8 @@ function Nosotros() {
       <span>PEQUEÑA.</span></h2>
       <TextNosotros/>
       <Team/>
+      <Tools/>
+      <Pagos/>
       <Footer/>
     </div>
     );
